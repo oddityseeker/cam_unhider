@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cameraidunlocker">
+
+    <uses-sdk android:minSdkVersion="24" android:targetSdkVersion="33" />
+
+    <application
+        android:label="Camera ID Unlocker"
+        android:allowBackup="false">
+
+        <!-- Обязательные метаданные, чтобы LSPosed/EdXposed распознал модуль -->
+        <meta-data
+            android:name="xposedmodule"
+            android:value="true" />
+        <meta-data
+            android:name="xposeddescription"
+            android:value="Добавляет скрытые physical camera ID в getCameraIdList()" />
+        <meta-data
+            android:name="xposedminversion"
+            android:value="93" />
+
+        <activity android:name=".DummyActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+</manifest>

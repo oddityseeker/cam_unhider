@@ -1,0 +1,35 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.example.cameraidunlocker'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.example.cameraidunlocker"
+        minSdk 24
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    // API Xposed/LSPosed - только для компиляции, на устройстве
+    // реальные классы предоставляет сам фреймворк (compileOnly).
+    // Используем локальный модуль-заглушку вместо сетевой Maven-зависимости,
+    // чтобы не зависеть от устаревшего jcenter-артефакта (см. README).
+    compileOnly project(':xposedstub')
+}
