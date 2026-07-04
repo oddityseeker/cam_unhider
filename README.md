@@ -40,7 +40,7 @@ Open in Android Studio and build normally (`Build → Build APK(s)`), or `./grad
 
 ## Configuration
 
-`MAX_PROBE_ID` in `HookMain.java` controls the probing range (default `32`, covers virtually all known devices). `TARGET_PACKAGES` can be used to restrict the hook to specific packages directly in code, in addition to the LSPosed Scope setting.
+`MAX_PROBE_ID` in `HookMain.java` controls the probing range (default `32`, covers all known devices). `TARGET_PACKAGES` can be used to restrict the hook to specific packages directly in code, in addition to the LSPosed Scope setting.
 
 ## Limitations & disclaimer
 
