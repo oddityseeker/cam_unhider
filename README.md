@@ -44,6 +44,7 @@ Open in Android Studio and build normally (`Build → Build APK(s)`), or `./grad
 
 ## Limitations & disclaimer
 
+- Made with AI
 - Tested on **OnePlus 8 Pro (MatrixX ROM)**. Behavior on other devices/ROMs is untested and may vary.
 - An unlocked ID appearing in the list does **not** guarantee it can be opened as an independent stream. Some IDs are *physical* cameras belonging to a logical multi-camera and may require being opened via `OutputConfiguration.setPhysicalCameraId()` within a logical camera session rather than as a standalone device. If an app crashes on open after unlocking an ID, this is the likely reason.
 - Probing 32 IDs runs on every `getCameraIdList()` call; the overhead is negligible in practice but you can lower `MAX_PROBE_ID` if needed.
