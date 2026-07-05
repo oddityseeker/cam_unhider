@@ -34,7 +34,7 @@ No HAL patching, no vendor partition edits, no rebuilding the ROM — this works
 
 ## Building from source
 
-`git clone <repo-url>`
+`git clone [<repo-url>](https://github.com/oddityseeker/cam_unhider)`
 `cd cam-unlocker`
 Open in Android Studio and build normally (`Build → Build APK(s)`), or `./gradlew assembleDebug` in terminal.
 
